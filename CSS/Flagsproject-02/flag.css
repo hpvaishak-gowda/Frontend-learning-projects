@@ -1,0 +1,39 @@
+#container{
+    height: 200px;
+    width:300px;
+    background-color: yellow;
+    position: relative;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: rgb(19, 19, 205);
+}
+
+.first,.third{
+    height: 80px;
+    width:90px
+}
+
+.third{
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.second,.fourth{
+    height: 80px;
+    width:170px;
+}
+
+.second{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.fourth{
+    position:absolute;
+    bottom: 0px;
+    right:0px;
+}
