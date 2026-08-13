@@ -1,0 +1,64 @@
+#container{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+}
+#circle{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    left: 100px;
+    top: 50px;
+}
+
+#secflag{
+    height: 200px;
+    width: 300px;
+    background-color: red;
+    position:relative
+}
+
+#inside1{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(11, 11, 158);
+    position: absolute;
+    top: 50px;
+}
+
+#inside2{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    left:100px
+
+}
+
+#thirdflag{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(21, 21, 180);
+    position: relative;
+}
+
+#pole1{
+    height: 200px;
+    width:40px;
+    background-color: yellow;
+    position: absolute;
+    left: 100px;
+}
+
+#pole2{
+    height:40px;
+    width:300px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 80px;
+
+}
