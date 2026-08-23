@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissor</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Rock Paper Scissor Game ;</h1>
+        <br>
+        <h3>Choose one ;</h3>
+    </head>
+
+    <body>
+
+        <button onclick="
+            if(status=== 'Rock'){
+                result='Tie';
+            }
+            else if(status == 'Paper'){
+                result='You Lose';
+            }
+            else{
+                result='You Won';
+            }
+        
+            
+            
+            alert(`computer choose ${status} \n${result}\n ${winlosstie()}`);
+        ">Rock</button>
+
+        <button onclick="
+            if(status=== 'Scissor'){
+                result='Tie';
+            }
+            else if(status == 'Paper'){
+                result='You Won';
+            }
+            else{
+                result='You Lose';
+            }
+             alert(`computer choose ${status} \n${result}\n ${winlosstie()}`);
+        
+        ">Scissor</button>
+
+
+        <button onclick="
+            if(status=== 'Rock'){
+                result='You Won';
+            }
+            else if(status == 'Paper'){
+                result='Tie';
+            }
+            else{
+                result='You Lose';
+            }
+            alert(`computer choose ${status} \n${result}\n ${winlosstie()}`);
+        ">Paper</button>
+
+        <button onclick="
+            reset();
+        ">clear</button>
+    </body>
+    <script>
+        let result = '';
+        let status = '';
+        let random = Math.random();
+
+        if (random <= 1 / 3) {
+            status = 'Rock';
+        }
+        else if (random <= 2 / 3) {
+            status = 'Paper';
+        }
+        else {
+            status = 'Scissor';
+        }
+        console.log(status);
+
+        const score = {
+            wins: 0,
+            losses: 0,
+            ties: 0
+
+        };
+
+        function winlosstie() {
+            if (result == 'You Won') {
+                score.wins += 1;
+            }
+            else if (result == 'You Lose') {
+                score.losses += 1;
+            }
+            else {
+                score.ties += 1;
+            }
+
+            return `Wins:${score.wins}, Losses:${score.losses}, Ties : ${score.ties}.`;
+
+        }
+
+        function reset(){
+            score.wins=score.losses=score.ties=0;
+            alert( `Wins:${score.wins}, Losses:${score.losses}, Ties : ${score.ties}.`);
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
