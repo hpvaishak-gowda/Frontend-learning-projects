@@ -4,6 +4,7 @@
     border:border-box;
 
 }
+
 .navbar{
     height:50px;
     background-color: #0F1111;
@@ -186,15 +187,19 @@ span{
 
 }
 
-.box-img{
-    background-image: url(./images/Box1image.jpg); 
+.ftbox-img{
     height:300px;
-    background-size: cover;
-    margin-top: 1rem;
+    width:100%;
+    margin-top: 1rem; 
     margin-bottom: 1rem;
-    background-position: cover;
 
     
+}
+
+.ftbox-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .box-content{
@@ -206,11 +211,35 @@ span{
     color: #007185;
     position: relative;
     bottom:  1px;
+    margin-top: 20px;
+    
     
 }
 
-.img3{
-    background-image: url(./images/box3.jpg);
+.fashionitems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-top: 20px;
 }
 
+.item img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
 
+.item p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#box2para{
+    position: relative;
+    margin-top: 70px;
+}
+
+#box4para{
+    margin-top: 70px;
+}
